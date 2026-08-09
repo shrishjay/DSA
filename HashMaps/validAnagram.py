@@ -10,6 +10,7 @@ class Solution:
             hashMapS[s[i]]=hashMapS.get(s[i],0)+1
             hashMapT[t[i]]=hashMapT.get(t[i],0)+1
         return hashMapS==hashMapT
+
 # another approach better for this problem as it says only lower case a-z is allowed so we take a fixed 26 length of array
     def isAnagramArray(self, s: str, t: str) -> bool:
         hashTable=[0]*26
